@@ -11,7 +11,7 @@ body:
     id: versao
     attributes:
       label: Versão do Cerra.AI
-      description: Release baixada (ex.: v1.0.0)
+      description: "Release baixada (ex.: v1.0.0)"
       placeholder: v1.0.0
     validations:
       required: true
