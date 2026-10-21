@@ -108,8 +108,9 @@ PDF com texto ou digitalizado (OCR), DOCX, XLSX, PPTX, CSV, ODT, HTML, TXT, MD, 
 
 | Atalho | Ação |
 | :--- | :--- |
-| `Ctrl + Enter` | Enviar a mensagem |
-| `Esc` | Fechar menus e janelas abertas |
+| `Enter` | Enviar a mensagem |
+| `Shift + Enter` | Quebrar linha sem enviar |
+| Botão de enviar durante a resposta | Interromper a geração |
 
 ## Privacidade e LGPD
 
