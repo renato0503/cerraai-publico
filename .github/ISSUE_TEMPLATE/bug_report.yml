@@ -1,0 +1,68 @@
+name: Relatar um problema
+description: Descreva um erro ou comportamento inesperado no Cerra.AI
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a melhorar o Cerra.AI. Não anexe documentos, conversas ou logs com dados pessoais reais.
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do Cerra.AI
+      description: Release baixada (ex.: v1.0.0)
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Versão do Windows
+      placeholder: Windows 11 23H2, 64 bits
+    validations:
+      required: true
+  - type: dropdown
+    id: hardware
+    attributes:
+      label: Hardware
+      options:
+        - GPU NVIDIA
+        - GPU AMD ou Intel
+        - Somente CPU
+        - Não sei informar
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu
+      description: Descreva o comportamento observado e a mensagem de erro, se houver.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Abri o aplicativo
+        2. Selecionei o workspace ...
+        3. Anexei um PDF ...
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que você esperava que acontecesse
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacidade
+    attributes:
+      label: Privacidade
+      options:
+        - label: Confirmei que não incluí dados pessoais, documentos reais ou segredos nesta issue.
+          required: true
+        - label: Conferi o hash SHA-256 do executável com o arquivo SHA256SUMS.txt da release.
+          required: false
